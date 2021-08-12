@@ -1,0 +1,53 @@
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.note-info{
+  display: grid;
+  align-items: center;
+  grid-template: 1fr / 0.2fr 0.2fr 1fr 0.2fr;
+  grid-template-areas: "title date  note-btn";
+}
+.note-title{
+  grid-area: title;
+  grid-column: 1 / 2;
+}
+.note-date{
+  grid-area: date;
+  grid-column: 2 / 3;
+  align-items: center;
+}
+.note-btn{
+  grid-area: note-btn;
+  grid-column: 4 / 5;
+  text-align: right;
+}
+.editInput{
+  margin: 10px;
+}
+#login .container #login-row #login-column #login-box {
+  margin-top: 120px;
+  max-width: 600px;
+  height: 320px;
+  border: 1px solid #9C9C9C;
+  background-color: #EAEAEA;
+}
+#login .container #login-row #login-column #login-box #login-form {
+  padding: 20px;
+}
+#login .container #login-row #login-column #login-box #login-form #register-link {
+  margin-top: -85px;
+}
+
